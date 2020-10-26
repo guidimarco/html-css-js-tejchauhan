@@ -1,0 +1,207 @@
+/* ||||| RESET E NORMALIZZAZIONE ||||| */
+/* <editor-fold */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* </editor-fold> */
+/* \\\\\ RESET E NORMALIZZAZIONE ///// */
+
+/* ---------------- */
+/* ---------------- */
+/* ----- HTML ----- */
+/* ---------------- */
+/* ---------------- */
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#wrapper {
+    height: 100vh;
+    background-image: url("https://tejchauhan.com/wp-content/uploads/2019/02/UX_MS2_Tire_air-6730_1260.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+/* ||||| HEADER ||||| */
+/* <editor-fold */
+header {
+    padding: 40px 0;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ***** LOGO ***** */
+/* #region */
+#logo img {
+    max-width: 80px;
+}
+
+/* #endregion */
+/* ***** LOGO ***** */
+
+/* ***** ICON ***** */
+/* #region */
+#icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 5vh;
+    background-color: #ff0044;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+}
+
+#icon:hover {
+    background-color: transparent;
+}
+
+#icon > i {
+    font-size: 30px;
+    color: transparent;
+}
+
+#icon:hover > i {
+    color: white;
+}
+
+#icon .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 150%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+}
+
+#icon:hover .overlay {
+    bottom: 0;
+}
+
+#icon .overlay ul {
+    display: none;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
+
+#icon:hover .overlay ul {
+    display: block;
+}
+
+#icon:hover .overlay ul a {
+    line-height: 10vh;
+}
+
+#icon .overlay ul li.overlay-link a::before,
+#icon .overlay ul li.overlay-link a::after {
+    content: "_";
+    color: transparent;
+}
+
+#icon .overlay ul li.social a:hover,
+#icon .overlay ul li.overlay-link a:hover,
+#icon .overlay ul li.overlay-link a:hover::after,
+#icon .overlay ul li.overlay-link a:hover::before {
+    color: #c8c8c8;
+}
+
+#icon .overlay ul li:last-child {
+    margin-bottom: 0;
+}
+
+#icon .social i {
+    margin-right: 10px;
+}
+
+#icon .social i:last-child {
+    margin-right: 0;
+}
+
+/* #endregion */
+/* ***** ICON ***** */
+
+/* </editor-fold> */
+/* \\\\\ END HEADER ///// */
+
+/* ----------------------- */
+/* ----------------------- */
+/* ----- MEDIA QUERY ----- */
+/* ----------------------- */
+/* ----------------------- */
+
+/* XS */
+@media screen and (min-width: 576px) {
+    /* ||||| HEADER ||||| */
+    /* <editor-fold */
+
+    /* ***** HEADER-DIV ***** */
+    /* #region */
+
+    /* #endregion */
+    /* ***** HEADER-DIV ***** */
+
+    /* </editor-fold> */
+    /* \\\\\ END HEADER ///// */
+}
+/* SM */
+@media screen and (min-width: 768px) {
+    /* ||||| HEADER ||||| */
+    /* <editor-fold */
+
+    /* ***** HEADER-DIV ***** */
+    /* #region */
+
+    /* #endregion */
+    /* ***** HEADER-DIV ***** */
+
+    /* </editor-fold> */
+    /* \\\\\ END HEADER ///// */
+}
+/* MD */
+@media screen and (min-width: 992px) {
+    /* ||||| HEADER ||||| */
+    /* <editor-fold */
+
+    /* ***** HEADER-DIV ***** */
+    /* #region */
+
+    /* #endregion */
+    /* ***** HEADER-DIV ***** */
+
+    /* </editor-fold> */
+    /* \\\\\ END HEADER ///// */
+}
+/* LG */
+@media screen and (min-width: 1200px) {
+    /* ||||| HEADER ||||| */
+    /* <editor-fold */
+
+    /* ***** HEADER-DIV ***** */
+    /* #region */
+
+    /* #endregion */
+    /* ***** HEADER-DIV ***** */
+
+    /* </editor-fold> */
+    /* \\\\\ END HEADER ///// */
+}
+/* XL */
