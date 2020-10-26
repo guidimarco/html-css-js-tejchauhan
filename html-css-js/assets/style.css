@@ -30,6 +30,50 @@ body {
     position: relative;
 }
 
+.overlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+}
+
+#wrapper .overlay-click {
+    display: flex;
+}
+
+.overlay ul {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
+
+.overlay ul a {
+    line-height: 10vh;
+}
+
+.overlay ul li.overlay-link a::before,
+.overlay ul li.overlay-link a::after {
+    content: "_";
+    color: transparent;
+}
+
+.overlay ul li.social a:hover,
+.overlay ul li.overlay-link a:hover,
+.overlay ul li.overlay-link a:hover::after,
+.overlay ul li.overlay-link a:hover::before {
+    color: #c8c8c8;
+}
+
+.overlay ul li:last-child {
+    margin-bottom: 0;
+}
 
 /* ||||| HEADER ||||| */
 /* <editor-fold */
@@ -77,55 +121,6 @@ header > div {
 
 #icon:hover > i {
     color: white;
-}
-
-#icon .overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    bottom: 150%;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all 0.3s;
-}
-
-#icon:hover .overlay {
-    bottom: 0;
-}
-
-#icon .overlay ul {
-    display: none;
-    list-style-type: none;
-    text-align: center;
-    color: white;
-}
-
-#icon:hover .overlay ul {
-    display: block;
-}
-
-#icon:hover .overlay ul a {
-    line-height: 10vh;
-}
-
-#icon .overlay ul li.overlay-link a::before,
-#icon .overlay ul li.overlay-link a::after {
-    content: "_";
-    color: transparent;
-}
-
-#icon .overlay ul li.social a:hover,
-#icon .overlay ul li.overlay-link a:hover,
-#icon .overlay ul li.overlay-link a:hover::after,
-#icon .overlay ul li.overlay-link a:hover::before {
-    color: #c8c8c8;
-}
-
-#icon .overlay ul li:last-child {
-    margin-bottom: 0;
 }
 
 #icon .social i {
