@@ -45,6 +45,30 @@ body {
 
 #wrapper .overlay-click {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#wrapper .overlay-click::after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 104px;
+}
+
+.overlay-click header {
+    align-self: flex-end;
+}
+
+.overlay #close-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 5vh;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
 }
 
 .overlay ul {
@@ -110,18 +134,18 @@ header > div {
     transition: background-color 0.5s;
 }
 
-#icon:hover {
+/* #icon:hover {
     background-color: transparent;
-}
+} */
 
 #icon > i {
     font-size: 30px;
     color: transparent;
 }
 
-#icon:hover > i {
+/* #icon:hover > i {
     color: white;
-}
+} */
 
 #icon .social i {
     margin-right: 10px;
